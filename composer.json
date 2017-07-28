@@ -1,0 +1,33 @@
+{
+    "name": "helhum/ext-tools",
+    "description": "Some cli tools to ease extension development",
+    "type": "library",
+    "license": "GPL 2+",
+    "authors": [
+        {
+            "name": "Helmut Hummel",
+            "email": "info@helhum.io"
+        }
+    ],
+    "require": {
+        "helhum/typo3-console": "^4.6",
+        "composer/composer": "^1.4"
+    },
+    "require-dev": {
+        "typo3/cms": "^8.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Helhum\\ExtTools\\": "src"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": "web"
+        },
+        "helhum/typo3-console": {
+            "install-extension-dummy": false
+        }
+    }
+}
